@@ -9,4 +9,4 @@ add action=dst-nat chain=dstnat protocol=tcp src-address=192.168.1.65 to-address
 
 dash.rb listens on port 8081 and calls a shell script whenever a connection is made.  This does mean anyone on my home network can trigger the behavior, but they could also click the lightswitches themselves.
 
-leaving.sh sources a shell file containing the ZWay user / pass / ip, then calls the ZWay API to turn on a light, then turn off all lights and lock the doors after a timeout.
+leaving.sh sources a shell file containing the ZWay user / pass / ip, then calls the ZWay API to turn on a light, then turns off all lights and lock the doors after a timer.
